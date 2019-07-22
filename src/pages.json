@@ -1,9 +1,37 @@
 {
-	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+	"pages": [
 		{
 			"path": "pages/index/index",
 			"style": {
-				"navigationBarTitleText": "uni-app"
+				"navigationBarTitleText": "uni-app",
+				"usingComponents": {
+					"i-input": "../../wxcomponents/custom/input/index"
+				}
+			}
+		}, {
+			"path": "pages/list/index",
+			"style": {
+				"navigationBarTitleText": "房源列表"
+			}
+		}, {
+			"path": "pages/detail/index",
+			"style": {
+				"navigationBarTitleText": "房源详情"
+			}
+		}, {
+			"path": "pages/my/index",
+			"style": {
+				"navigationBarTitleText": "我的信息"
+			}
+		}, {
+			"path": "pages/found/index",
+			"style": {
+				"navigationBarTitleText": "发现"
+			}
+		}, {
+			"path": "pages/manager/index",
+			"style": {
+				"navigationBarTitleText": "经纪人"
 			}
 		}
 	],
@@ -12,5 +40,28 @@
 		"navigationBarTitleText": "uni-app",
 		"navigationBarBackgroundColor": "#F8F8F8",
 		"backgroundColor": "#F8F8F8"
-	}
+	},
+	"tabBar": {
+        "color": "#7A7E83",
+        "selectedColor": "#3cc51f",
+        "borderStyle": "black",
+        "backgroundColor": "#ffffff",
+        "list": [{
+			"pagePath": "pages/index/index",
+			"iconPath": "static/image/index_off.png",
+            "selectedIconPath": "static/image/index_on.png"
+		}, {
+			"pagePath": "pages/my/index",
+			"iconPath": "static/image/my_off.png",
+            "selectedIconPath": "static/image/my_on.png"
+		}, {
+			"pagePath": "pages/found/index",
+			"iconPath": "static/image/found_off.png",
+            "selectedIconPath": "static/image/found_on.png"
+		}, {
+			"pagePath": "pages/manager/index",
+			"iconPath": "static/image/manager_off.png",
+            "selectedIconPath": "static/image/manager_on.png"
+		}]
+    }
 }
