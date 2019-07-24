@@ -2,11 +2,10 @@
 	<view class="content">
 		<view class="swiper-wrapper">
 			<view class="search">
-				<a class="search__location">
+				<view class="search-location">
 					杭州
-					<i class="icon-triangle"></i>
-				</a>
-				<hr class="search__divider"/>
+					<icon class="iconfont icon-xiajiantou" />
+				</view>
 				<input class="search__input" type="text" :value="val" mode="wrapped" />
 			</view>
 			
@@ -18,56 +17,50 @@
 				</block>
 			</swiper>
 		</view>
+
+		<view class="category">
+			<view class="category-item">
+				<view class="category-img">
+					<icon class="iconfont icon-haofangtuo400iconfonthaofangtuo" />
+				</view>
+				<view class="category-title">二手房</view>
+			</view>
+			<view class="category-item">
+				<view class="category-img">
+					<icon class="iconfont icon-haofangtuo400iconfonthaofangtuo" />
+				</view>
+				<view class="category-title">二手房</view>
+			</view>
+			<view class="category-item">
+				<view class="category-img">
+					<icon class="iconfont icon-haofangtuo400iconfonthaofangtuo" />
+				</view>
+				<view class="category-title">二手房</view>
+			</view>
+			<view class="category-item">
+				<view class="category-img">
+					<icon class="iconfont icon-haofangtuo400iconfonthaofangtuo" />
+				</view>
+				<view class="category-title">二手房</view>
+			</view>
+		</view>
+
+		<p class="list-title">推荐房源</p>
+		<view class="detail" v-for="(item, index) in detailList" :key="index">
+			<view class="detail-l">
+				<img :src="item.url" />
+			</view>
+			<view class="detail-r">
+				<view class="detail-title">{{item.title}}</view>
+				<view class="detail-desc">{{item.desc}}</view>
+				<view class="detail-tag">
+					<span v-for="tag in item.tags" :key="tag">{{tag}}</span>
+				</view>
+				<view>{{item.price}}</view>
+			</view>
+		</view>
 	</view>
 </template>
 
-<script>
-export default {
-	data() {
-		return {
-			imgList: [
-				'/static/image/banner1.jpg',
-				'/static/image/banner1.jpg',
-				'/static/image/banner1.jpg'
-			],
-			val: '233'
-		}
-	},
-	onLoad() {
-
-	},
-	methods: {
-
-	}
-};
-</script>
-
-<style lang="scss">
-@import '../../style/index.scss';
-
-.slide-image {
-	width: 100%;
-	height: 100%;
-}
-@include b(search) {
-	z-index: 5;
-	display: flex;
-	position: absolute;
-	width: 690rpx;
-	line-height: 60rpx;
-	padding: 5rpx 10rpx;
-	margin: 20rpx 30rpx;
-	border-radius: 5px;
-	background-color: #fff;
-	@include e(location) {
-		width: 20%;
-	}
-
-	@include e(divider) {
-		
-	}
-
-	@include e(input) {
-	}
-}
-</style>
+<script src="./index.js" />
+<style scoped lang="scss" src="./index.scss" />

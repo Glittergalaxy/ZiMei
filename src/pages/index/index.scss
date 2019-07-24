@@ -1,0 +1,89 @@
+@import '../../style/mixins/index.scss';
+
+@include b(slide-image) {
+	width: 100%;
+	height: 100%;
+}
+
+@include b(search) {
+	z-index: 5;
+	display: flex;
+	position: absolute;
+	width: 600rpx;
+	padding: 0 30rpx;
+	margin: 40rpx 30rpx;
+	border-radius: 5px;
+	background-color: #fff;
+	@include e(input) {
+		height: 70rpx;
+		width: 100%;
+		padding: 0 20rpx;
+	}
+}
+
+@include b(search-location) {
+	width: 120rpx;
+	height: 30rpx;
+	display: flex;
+	margin: 20rpx 10rpx;
+	border-right: solid 2rpx #dedede;
+	.iconfont {
+		margin-left: 10rpx;
+		font-size: 20rpx;
+		transform: translateY(-22rpx);
+	}
+}
+
+@include b(category) {
+	display: flex;
+}
+
+@include b(category-item) {
+	width: 25%;
+	display: flex;
+	padding: 30rpx 0;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+@include b(category-img) {
+	text-align: center;
+	width: 80rpx;
+	height: 80rpx;
+	padding: 10rpx;
+	background-color: #19fa9f;
+	border-radius: 80rpx;
+	.iconfont {
+		color: #fff;
+		transform: translateY(4rpx);
+	}
+}
+
+@include b(category-title) {
+	padding-top: 20rpx;
+	text-align: center;
+}
+
+@include b(list-title) {
+	font-size: 36rpx;
+	padding: 30rpx 40rpx 30rpx;
+}
+
+@include b(detail) {
+	display: flex;
+	height: 160rpx;
+	padding: 20rpx;
+	margin: 0 20rpx; 
+	border-bottom: solid 2rpx #dedee1;
+}
+
+@include b(detail-l) {
+	image {
+		width: 100%;
+		height: 100%;
+		border-radius: 8rpx;
+	}
+	width: 240rpx;
+	margin-right: 20rpx;
+}

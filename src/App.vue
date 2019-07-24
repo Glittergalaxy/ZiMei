@@ -13,8 +13,5 @@
 </script>
 
 <style lang="scss">
-	/*每个页面公共css */
-	* {
-		color: #888;
-	}
+	@import './style/index.scss';
 </style>
