@@ -1,0 +1,56 @@
+@import '../../../style/mixins/index.scss';
+
+* {
+    font-size: 24rpx;
+}
+
+@include b(source-list) {
+    margin-left: 40rpx;
+}
+
+@include b(detail) {
+	display: flex;
+	height: 200rpx;
+	padding: 40rpx 40rpx 40rpx 0;
+	border-bottom: solid 2rpx #dedee8;
+}
+
+@include b(detail-l) {
+	image {
+		width: 100%;
+		height: 100%;
+		border-radius: 8rpx;
+	}
+    width: 300rpx;
+    height: 160rpx;
+    box-sizing: border-box;
+	margin-right: 30rpx;
+}
+
+@include b(detail-r) {
+    @include e(title) {
+        font-size: 34rpx;
+    }
+    @include e(desc) {
+        color: #666;
+        line-height: 50rpx;
+    }
+    @include e(tag) {
+        padding: 0 10rpx;
+        line-height: 32rpx;
+        + .detail-r__tag {
+            margin-left: 10rpx;
+        }
+    }
+    @include e(price) {
+        line-height: 60rpx;
+        color: #F95640;
+        font-size: 28rpx;
+        font-weight: bold;
+        margin-right: 10rpx;
+    }
+    @include e(unit) {
+        line-height: 60rpx;
+        color: #888;
+    }
+}

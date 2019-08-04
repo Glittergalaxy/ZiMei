@@ -1,0 +1,31 @@
+@import '../../../../style/mixins/index.scss';
+
+@include b(category) {
+	display: flex;
+}
+
+@include b(category-item) {
+	width: 25%;
+	display: flex;
+	padding: 30rpx 0;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+@include b(category-img) {
+	position: relative;
+	width: 90rpx;
+	height: 90rpx;
+	border-radius: 90rpx;
+	
+	.iconfont {
+		color: #fff;
+		font-size: 36rpx;
+	}
+}
+
+@include b(category-title) {
+	padding-top: 20rpx;
+	text-align: center;
+}
