@@ -1,0 +1,83 @@
+@import '../../style/mixins/index.scss';
+
+image {
+    width: 100%;
+    height: 1000rpx;
+    display: inline-block;
+    margin: 30rpx 0;
+}
+
+@include b(content) {
+    padding-bottom: 140rpx;
+}
+
+@include b(slide) {
+	height: 520rpx;
+}
+
+@include b(slide-image) {
+	width: 100%;
+	height: 100%;
+}
+
+@include b(share-btn) {
+    margin: 0;
+    padding: 0;
+}
+
+
+@include b(contact-user) {
+    width: 60rpx;
+    height: 60rpx;
+    display: inline-block;
+    border-radius: 60rpx;
+}
+
+@include b(bottom) {
+    z-index: 1000;
+    background-color: #fff;
+    height: 100rpx;
+    position: fixed;
+    align-items: center;
+    display: flex;
+    bottom: 0;
+    padding: 10rpx 20rpx;
+    box-sizing: border-box;
+    border-top: 2rpx solid #dedee1;
+    width: 100%;
+    line-height: 80rpx;
+}
+
+@include b(contact-info) {
+    margin: 0 40rpx 0 20rpx;
+    @include e(name) {
+        line-height: 40rpx;
+    }
+    @include e(company) {
+        line-height: 40rpx;
+    }
+}
+
+@include b(contact-btn) {
+    text-align: center;
+    line-height: 80rpx;
+    height: 80rpx;
+    flex-grow: 1;
+    color: #fff;
+    font-size: 32rpx;
+    border-radius: 10rpx;
+    + .contact-btn {
+        margin-left: 20rpx;
+    }
+    .iconfont {
+        position: static;
+        transform: translate(0, 0);
+        margin-right: 10rpx;
+    }
+    @include m(success) {
+        background: $uni-color-success;
+    }
+    @include m(warning) {
+        background: $uni-color-warning;
+    }
+}

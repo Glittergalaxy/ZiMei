@@ -11,6 +11,11 @@
 				"navigationBarTitleText": "房源列表"
 			}
 		}, {
+			"path": "pages/location/index",
+			"style": {
+				"navigationBarTitleText": "地区选择"
+			}
+		}, {
 			"path": "pages/detail/index",
 			"style": {
 				"navigationBarTitleText": "房源详情"
@@ -18,17 +23,23 @@
 		}, {
 			"path": "pages/my/index",
 			"style": {
-				"navigationBarTitleText": "我的信息"
+				"backgroundColor": "#F6F6F6",
+				"backgroundColorTop": "#F6F6F6",
+				"navigationBarTitleText": "我的"
 			}
 		}, {
 			"path": "pages/found/index",
 			"style": {
+				"backgroundColor": "#F6F6F6",
+				"backgroundColorTop": "#F6F6F6",
 				"navigationBarTitleText": "发现"
 			}
 		}, {
-			"path": "pages/manager/index",
+			"path": "pages/message/index",
 			"style": {
-				"navigationBarTitleText": "经纪人"
+				"backgroundColor": "#F6F6F6",
+				"backgroundColorTop": "#F6F6F6",
+				"navigationBarTitleText": "消息"
 			}
 		}
 	],
@@ -49,20 +60,20 @@
 			"selectedIconPath": "static/image/index_on.png",
 			"text": "首页"
 		}, {
-			"pagePath": "pages/my/index",
-			"iconPath": "static/image/my_off.png",
-			"selectedIconPath": "static/image/my_on.png",
-			"text": "我的"
+			"pagePath": "pages/message/index",
+			"iconPath": "static/image/message_off.png",
+			"selectedIconPath": "static/image/message_on.png",
+			"text": "消息"
 		}, {
 			"pagePath": "pages/found/index",
 			"iconPath": "static/image/found_off.png",
 			"selectedIconPath": "static/image/found_on.png",
 			"text": "发现"
 		}, {
-			"pagePath": "pages/manager/index",
-			"iconPath": "static/image/manager_off.png",
-			"selectedIconPath": "static/image/manager_on.png",
-			"text": "消息"
+			"pagePath": "pages/my/index",
+			"iconPath": "static/image/my_off.png",
+			"selectedIconPath": "static/image/my_on.png",
+			"text": "我的"
 		}]
     }
 }

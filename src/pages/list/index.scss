@@ -1,7 +1,12 @@
 @import '../../style/mixins/index.scss';
 
+@include b(content) {
+    color: #222;
+    font-size: 24rpx;
+}
+
 @include b(search) {
-    padding: 20rpx 40rpx 30rpx;
+    padding: 20rpx 40rpx 0;
 }
 
 @include b(search-container) {
@@ -29,4 +34,8 @@
     .iconfont {
         top: 40%;
     }
+}
+
+@include b(source-list) {
+    border-top: 2rpx solid #dedee1;
 }

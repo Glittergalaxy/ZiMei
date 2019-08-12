@@ -1,7 +1,7 @@
 <template>
     <view class="source-list">
         <view v-for="(item, index) in list" :key="index">
-            <navigator class="detail" :url="`/pages/detail/index?id=${item.id}`" hover-class="navigator-hover">
+            <navigator class="detail" :url="`/pages/detail/index?id=${item.id}`" open-type="navigate">
                 <view class="detail-l">
                     <img :src="item.url" />
                 </view>
